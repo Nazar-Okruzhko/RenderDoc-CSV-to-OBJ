@@ -80,7 +80,7 @@ def convert_csv_to_obj(csv_path):
     verts, uvs, faces = parse_csv(csv_path)
     obj_path = os.path.splitext(csv_path)[0] + ".obj"
     write_obj(obj_path, verts, uvs, faces)
-    print(f"✅ Saved: {obj_path}")
+    print(f"Saved: {obj_path}")
 
 def main():
     if len(sys.argv) < 2:
@@ -90,13 +90,14 @@ def main():
     for arg in sys.argv[1:]:
         if arg.lower().endswith(".csv") and os.path.isfile(arg):
             try:
-                print(f"📄 Processing: {arg}")
+                print(f"Processing: {arg}")
                 convert_csv_to_obj(arg)
             except Exception as e:
-                print(f"❌ Error processing {arg}: {e}")
+                print(f"Error processing {arg}: {e}")
         else:
-            print(f"⚠️ Skipped: {arg} (not a .csv file)")
+            print(f"Skipped: {arg} (not a .csv file)")
 
 if __name__ == "__main__":
     main()
+
 
