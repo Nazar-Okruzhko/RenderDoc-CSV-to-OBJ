@@ -9,8 +9,8 @@ POSITION_INDEX = (2, 3, 4)  # X, Y, Z column indices
 UV_INDEX = (5, 6)           # U, V column indices
 MIRROR_Z = True             # Mirrors geometry's Z (For original orientation)
 
-# Remember to Merge "By Distance" in Edit mode bt pressing 'M'
-# Don't forget to Shde Smooth by double clicking the 
+# Remember to Select All by pressing 'A' and Merge (By Distance) by 'M' in Edit Mode
+# Don't forget to Shde Smooth the model (Right mouse button in Object mode)
 # ==========================================================
 
 def read_float(row, idx, default=0.0):
@@ -99,3 +99,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
