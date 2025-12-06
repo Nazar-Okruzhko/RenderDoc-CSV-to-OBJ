@@ -9,5 +9,3 @@ Drag and drop Single/Multiple .CSV files into the tool, this will automatically 
 
 But remember that not all .CSV files have always same column structure, (Vertex position & UV map colums).
 The program has the default RenderDoc's structure by default, you can of course easily cutomize this by adjusting the column orders of Vertex position & UV map colums to correspond to your .CSV file
-
-<img width="555" height="486" alt="Screenshot (3111)" src="https://github.com/user-attachments/assets/f6d752a0-a247-42c1-ac6c-3492f88022b7" />
